@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <script>
+        let paramGetter = new URLSearchParams(window.location.search)
+        let params = Object.fromEntries(paramGetter.entries());
+        
+        if (params["l"] != null) window.location.replace("http://gamingas.wz.cz/lofttop10/?id="+params["l"]) // List
+        if (params["p"] != null) window.location.replace("http://gamingas.wz.cz/lofttop10/?pid="+params["p"]) // Private list
+        if (params["y"] != null) window.location.replace("http://gamingas.wz.cz/lofttop10/?year="+params["y"]) // Year
+    </script>
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@g4mingaz" />
+    <meta name="twitter:title" content="GamingasCZ, a human being!" />
+    <meta name="twitter:description" content="Hiya! I'm a Web/Game developer, digital artist and a small YouTuber. Check me out, if you'd like to!" />
+    <meta name="twitter:image" content="http://gamingas.wz.cz/images/devPFP.png" />
+
+    <title>GamingasCZ</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="assets/main.css">
+
+    <script type="text/javascript" src="assets/main.js"></script>
+    <script type="text/javascript" src="assets/general.js"></script>
+
+  </head>
+  <body>
+    <h2 class="title">Gamingas</h2>
+
+    <div class="outdated" align="center">
+        <h2 class="outdText">You seem to have an outdated browser! You can switch to a simplified version of the site.</h2>
+        <button class="outdBut">View simplified site!</button>
+    </div>
+
+    <table class="mainTable">
+        <tr>
+            <td class="socialText">
+                <img class="socialImg" src="images/yt.png">
+                <h2 class="socialHead">YouTube</h2>
+            </td>
+            <td class="socialText">
+                <img class="socialImg" src="images/tw.png">
+                <h2 class="socialHead">Twitter</h2>
+            </td>
+            <td class="socialText">
+                <img class="socialImg" src="images/gj.png">
+                <h2 class="socialHead">GameJolt</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="socialText">
+                <img class="socialImg" src="images/da.png">
+                <h2 class="socialHead">DeviantArt</h2>
+            </td>
+            <td class="socialText">
+                <img class="socialImg" src="images/git.png">
+                <h2 class="socialHead">GitHub</h2>
+            </td>
+        </tr>
+        <tr style="transform: scaleY(0.0); transition-duration: 0.1s;" id="moreSocials">
+            <td class="socialText"><h3 class="moreText">Odysee</h3></td>
+            <td class="socialText"><h3 class="moreText">Reddit</h3></td>
+            <td class="socialText"><h3 class="moreText">Newgrounds</h3></td>
+            <td class="socialText"><h3 class="moreText">Twitch</h3></td>
+            <td class="socialText"><h3 class="moreText">Soundcloud</h3></td>
+        </tr>
+        <tr>
+            <td onclick="moreSocials()">
+                <h2 id="more">Více</h2>
+                <img src="images/arroe.png">
+            </td>
+        </tr>
+    </table>
+
+<!--
+    <table>
+        <th>
+            <div style="display: flex;">
+                <img src="images/border.png">
+                <h2 class="tabHeader">Projekty</h2>
+                <img src="images/border.png" style="transform: scaleX(-1);">
+            </div>
+        </th>
+        <tr>
+            <div>
+                <img src="images/gj.png">
+            </div>
+        </tr>
+    </table>
+-->
+  </body>
+</html>

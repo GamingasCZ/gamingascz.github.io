@@ -1,0 +1,97 @@
+.socialImg {
+    width: 5em;
+    height: max-content;
+    transform: none;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+
+
+body {
+  background-color: #60ff76;
+  background-image: linear-gradient(rgba(175, 245, 185, 0) 0%, rgb(0, 51, 3) 100%);
+  height: 98vh;
+  width: 98vw;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+td {
+  display: flex;
+  margin: 0 5%;
+  align-items: center;
+  cursor: pointer;
+}
+tr {
+  display: flex;
+  margin: 0 5%;
+  justify-content: center;
+  transition-duration: 1s;
+}
+h2, h3 {
+  font-size: 2.5em;
+  margin: 0 0% 0 6%;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: rgb(36, 36, 36);
+  transition-property: color;
+  transition-duration: 1s;
+}
+h3 {
+  font-size: 1.5vw !important;
+}
+
+table {
+  margin: auto;
+}
+
+.tabHeader {
+  margin: 0;
+  background: black;
+  height: 74px;
+  align-self: end;
+  width: 46vw;
+ }
+ 
+.title {
+  font-size: 8vw;
+  text-align: center;
+  transition: transform 0.5s, color 0.2s;
+  transform: translateY(-35vh);
+  transition-timing-function: cubic-bezier(0,0,0,1.03);
+  -webkit-text-stroke: #55ff468f 2px;
+  text-shadow: #00000059 4px 4px 10px;
+}
+
+.moreText:hover {
+  transform: scale(1.2);
+}
+.moreText {
+  transform: scale(1);
+  transition: transform 0.1s;
+}
+
+.socialHead {
+  transform: scale(1) translateX(0);
+  transition: transform 0.2s, color 0.2s; 
+}
+
+.socialText {
+  transition: opacity 0.2s;
+}
+
+.mainTable {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.outdText {
+  font-size: large;
+  text-align: center;
+}
+
+.outdBut {
+  background: rgb(149, 255, 163);
+  font-size: x-large;
+  padding: 15px;
+  border: none;
+}

@@ -1,0 +1,32 @@
+.socialImg {
+    width: 50px;
+    height: 50px;
+}
+body { background-color: #60ff76; }
+
+h2, h3, h4 {
+  font-size: 1.7em;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: rgb(36, 36, 36);
+  display: inline;
+  vertical-align: top;
+}
+h3 {
+  font-size: 1.6em !important;
+  margin: 2%;
+}
+ 
+.title {
+  font-size: 8vw;
+  text-align: center;
+  text-shadow: #00000059 4px 4px 10px;
+  font-family: 'Gloria Hallelujah', cursive;
+  margin: 0 !important;
+}
+
+img { display: inline; }
+u { text-decoration-thickness: 4px; }
+    
+a { text-decoration: none; }
+
+.socialText { margin: 5%; white-space: nowrap;}
