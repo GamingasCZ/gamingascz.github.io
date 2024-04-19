@@ -9,10 +9,10 @@
     <meta name="twitter:site" content="@g4mingaz" />
     <meta name="twitter:title" content="GamingasCZ, a human being!" />
     <meta name="twitter:description"
-        content="Hiya! I'm a Web/Game developer, digital artist and a small YouTuber. Check me out, if you'd like to!" />
+        content="Hello! I'm Gamingas, a webdev, game dev, digital artist and a small YouTuber. Here's all my work!" />
     <meta name="twitter:image" content="images/devPFP.jpg" />
 
-    <meta name="description" content="Hiya! I'm Gamingas, a Web/Game developer, digital artist and a small YouTuber. Check me out, if you'd like to!"/>
+    <meta name="description" content="Hello! I'm Gamingas, a webdev, game dev, digital artist and a small YouTuber. Here's all my work!"/>
     
     <title>GamingasCZ</title>
 
@@ -26,37 +26,95 @@
 </head>
 
 <body>
+    <div id="bg"></div>
+
     <div id="gglogo">
         <img src="images/gglogo3.svg" alt="">
     </div>
 
+    <dialog id="contactDialog">
+        <table>
+            <tr>
+                <td>
+                    <img src="images/devPFP.jpg" id="pfp" alt="PFP" width="128">
+                </td>
+            </tr>
+            <tr>
+                <td>GamingasCZ</td>
+            </tr>
+            <tr>
+                <td>Vojtěch Bartoň</td>
+            </tr>
+        </table>
+
+        <ul>
+            <li>@g4mingaz</li>
+            <li><a href="mailto:gamingforyou875@gmail.com">gamingforyou875@gmail.com</a></li>
+            <li><a href="mailto:me@gamingas.cz">me@gamingas.cz</a></li>
+        </ul>
+        
+    </dialog>
+
     <div class="flexCol">
         <h1 class="title">Gamingas</h1>
-        <h3>Under construction</h3>
+        <a target="_blank" href="https://ko-fi.com/gamingas" class="flex socialText bgmod" id="smaller" data-col="KO">
+            <img class="socialImg" src="images/kofi.webp" alt="Kofi" width="40">
+            <h3 style="display: inline; margin-left: 1rem;">Support me on Ko-fi!</h3>
+        </a>
+    </div>
+
+    <div id="mainLinks">
+        <a target="_blank" href="https://gamingas.cz/gdlists" class="bgmod" data-col="dark GDL">
+            <img src="images/gdlists.webp" width="80" alt="GDL">
+            <h3>GD Lists</h3>
+            <span>Share lists and reviews of Geometry Dash levels!</span>
+        </a>
+        <a target="_blank" href="https://gamingas.cz/art" class="bgmod" data-col="dark ART">
+            <img src="images/brush.webp" width="80" alt="ART">
+            <h3>Art Portfolio</h3>
+            <span>A gallery with all the art I've drawn!</span>
+        </a>
+        <a target="_blank" href="https://gamingas.cz/geocaching" class="bgmod" data-col="dark KES">
+            <img src="images/chytejkesky.webp" width="80" alt="KES">
+            <h3>Chytej kesky!</h3>
+            <span>Czech site with tons of resources for Geocaching!</span>            
+        </a>
+        <a target="_blank" href="https://gamingas.cz/traicBrowser" class="bgmod" data-col="dark TRB">
+            <img src="images/traic.webp" width="80" alt="TRB">
+            <h3>TraiC Browser</h3>
+            <span>Share custom TraiC levels!</span>            
+        </a>
     </div>
 
     <main class="mainTable">
-        <a target="_blank" href="https://www.youtube.com/channel/UChraQeO5cjYneoD221BRHpw" class="socialText" data-col="YT">
+        <a target="_blank" href="https://www.youtube.com/channel/UChraQeO5cjYneoD221BRHpw" class="socialText bgmod" data-col="YT">
             <img width="80" height="80" class="socialImg" alt="YT" src="images/yt.webp">
             <h2 class="socialHead">YouTube</h2>
         </a>
-        <a target="_blank" href="https://bsky.app/profile/g4mingaz.bsky.social" class="socialText" data-col="BSKY">
+        <a target="_blank" href="https://twitter.com/g4mingaz" class="socialText bgmod" data-col="TW">
+            <img width="80" height="80" class="socialImg" alt="TW" src="images/tw.webp">
+            <h2 class="socialHead">Twitter</h2>
+        </a>
+        <a target="_blank" href="https://bsky.app/profile/g4mingaz.bsky.social" class="socialText bgmod" data-col="BSKY">
             <img width="80" height="80" class="socialImg" alt="BSKY" src="images/bluesky.webp">
             <h2 class="socialHead">Bluesky</h2>
         </a>
-        <a target="_blank" href="https://gamejolt.com/@GamingasCZ" class="socialText" data-col="GJ">
+        <a target="_blank" href="https://gamejolt.com/@GamingasCZ" class="socialText bgmod" data-col="GJ">
             <img width="80" height="80" class="socialImg" alt="GJ" src="images/gj.webp">
             <h2 class="socialHead">GameJolt</h2>
         </a>
-        <a target="_blank" href="https://www.deviantart.com/gamingascz" class="socialText" data-col="DA">
-            <img width="80" height="80" class="socialImg" alt="DA" src="images/da.webp">
-            <h2 class="socialHead">DeviantArt</h2>
+        <a target="_blank" href="https://sheezy.art/gamingascz" class="socialText bgmod" data-col="SH">
+            <img width="80" height="80" class="socialImg" alt="SH" src="images/sheezy.webp">
+            <h2 class="socialHead">Sheezy</h2>
         </a>
-        <a target="_blank" href="https://github.com/GamingasCZ" class="socialText" data-col="GH">
+        <a target="_blank" href="https://github.com/GamingasCZ" class="socialText bgmod" data-col="GH">
             <img width="80" height="80" class="socialImg" alt="GH" src="images/git.webp">
             <h2 class="socialHead">GitHub</h2>
         </a>
     </main>
+    <section class="mainTable">
+    </section>
+
     <button data-hidden="1" onclick="this.dataset.hidden = this.dataset.hidden == 0 ? 1 : 0" id="vice">
         <div style="display: flex; align-items: center; margin: 0 auto;">
             <h2 id="more">More</h2>
@@ -64,7 +122,6 @@
             <img alt="More" width="64" height="64" src="images/arroe.webp">
         </div>
         <dív id="moreSocials">
-            <a target="_blank" href="https://twitter.com/g4mingaz" class="moreText">Twitter</a>
             <a target="_blank" href="https://odysee.com/@GamingasCZ:4" class="moreText">Odysee</a>
             <a target="_blank" href="https://www.reddit.com/user/jsemzbrna" class="moreText">Reddit</a>
             <a target="_blank" href="https://gamingascz.newgrounds.com/" class="moreText">Newgrounds</a>
@@ -72,18 +129,127 @@
             <a target="_blank" href="https://soundcloud.com/gamingascz" class="moreText">Soundcloud</a>
         </dív>
     </button>
+
+    <!--
+    <section class="tableSection">
+        <caption>Websites</caption>
+        <table class="workTable" cellpadding="10" cellspacing="10">
+            <tr>
+                <td>
+                    <h3>GD Lists</h3>
+                    <article>A social network for making lists and reviews of Geometry Dash levels.</article>
+                </td>
+                <td>
+                    <h3>Chytej Kesky!</h3>
+                    <article>Geocaching themed website with videos and a manager for GPX files.</article>
+                </td>
+                <td>
+                    <h3>TraiC Browser</h3>
+                    <article>Browser for user-created levels from the game TraiC.</article>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="tableSection">
+        <caption>Games</caption>
+        <table class="workTable" cellpadding="10" cellspacing="10">
+            <tr>
+                <td>
+                    <h3>Muggroads</h3>
+                    <article>A Geocaching themed incremental tower defense game.</article>
+                </td>
+                <td>
+                    <h3>TraiC</h3>
+                    <article>A topdown </article>
+                </td>
+                <td>
+                    <h3>SuperGamingasBros.</h3>
+                    <article>A command line RPG set in the Gamingas Dimension.</article>
+                </td>
+                <td>
+                    <h3>PKBattleSimRMX</h3>
+                    <article>An Android app for simulating Pokémon battles.</article>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="tableSection">
+        <caption>Translation Work</caption>
+        <table class="workTable" cellpadding="10" cellspacing="10">
+            <tr>
+                <td colspan="4" id="langHeader">
+                    <div>
+                        <hr>
+                        <img src="images/flag.webp" alt="">
+                        <span>Into Czech</span>
+                        <hr>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Things Lost, Things Gained</h3>
+                    <figcaption>by Atelier Rhyme</figcaption>
+                    <article>Comic which follows Zephyr and friends, amidst their favorite time of year.</article>
+                </td>
+                <td>
+                    <h3>A Short Respite</h3>
+                    <figcaption>by Atelier Rhyme</figcaption>
+                    <article>Comic which follows a Zeraora named Zephyr, who has way too much free time on his hands!</article>
+                </td>
+                <td>
+                    <h3>Odysee</h3>
+                    <figcaption></figcaption>
+                    <article>A Web3 multimedia sharing platform.</article>
+                </td>
+                <td>
+                    <h3>Geometry Dash 2.1</h3>
+                    <figcaption></figcaption>
+                    <article>Unofficial translation for the rhythm based platformer game, Geometry Dash.</article>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="tableSection">
+        <caption>Other projects</caption>
+        <table class="workTable" cellpadding="10" cellspacing="10">
+            <tr>
+                <td>
+                    <h3>Pokeclone</h3>
+                    <article>Simple Pokémon clone in Godot with a customizable attack editor.</article>
+                </td>
+                <td>
+                    <h3>Freedom69 bot</h3>
+                    <article>Twitter bot that post random tweets about Freedom69.</article>
+                </td>
+                <td>
+                    <h3>Python Wordle</h3>
+                    <article>CLI Wordle clone in Python</article>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <button class="footerButton" onclick="document.getElementById('contactDialog').openModal()">
+        <h2>Contact</h2>
+    </button>
+    -->
 </body>
 
 <script>
-    Array.from(document.getElementsByClassName("socialText")).forEach(function (x) {
+    Array.from(document.getElementsByClassName("bgmod")).forEach(function (x) {
         x.addEventListener("mouseover", function () {
-            if (x.dataset.col == "DA") {
+            if (x.dataset.col.startsWith("dark")) {
                 document.documentElement.style.setProperty('--text-default', 'var(--text-white)');
+                document.documentElement.style.setProperty('--default-col', 'var(--'+ x.dataset.col.split(" ")[1] +'-col)');
             }
             else {
                 document.documentElement.style.setProperty('--text-default', 'var(--text-dark)');
+                document.documentElement.style.setProperty('--default-col', 'var(--'+ x.dataset.col +'-col)');
             }
-            document.documentElement.style.setProperty('--default-col', 'var(--'+ x.dataset.col +'-col)');
         })
         x.addEventListener("mouseout", function () {
             document.documentElement.style.setProperty('--text-default', 'var(--text-dark)');
