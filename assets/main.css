@@ -1,5 +1,6 @@
 * {
   font-family: 'Gloria Hallelujah', cursive;
+  color: black;
   color: var(--text-default);
   transition-property: color, transform, background;
   transition-duration: 0.33s;
