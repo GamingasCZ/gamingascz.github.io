@@ -12,14 +12,14 @@
   transition-timing-function: cubic-bezier(.68,-0.55,.27,1.55);
 }
 
-@media (prefers-reduced-motion) {
+/* @media (prefers-reduced-motion) {
   * { transition: none !important; color: var(--text-dark);}
   .hoverScale:hover > img {@apply !transform-none; }
   body {background: var(--default-col2) !important;}
-}
+} */
 
 @theme {
-  --color-dark: var(--text-dark);
+  --color-dark: var(--text-default);
 }
 
 :root {
@@ -34,6 +34,13 @@
   --ART-col: #001212;
   --KES-col: #07100A;
   --TRB-col: #110A06;
+
+  --FRB-col: #ae2749;
+  --ARR-col: #3b1130;
+  --DLS-col: #432e41;
+  --FBP-col: #dc6c2c;
+  --SGB-col: #8e5e42;
+  --GDC-col: #972525;
 
   --YT-col: #a23b3b;
   --BSKY-col: #853adb;
@@ -59,21 +66,30 @@ a {
   @apply no-underline
 }
 
-.hoverScale {
+.hoverScale img {
  @apply transform-none transition-transform
 }
 .hoverScale:hover {
-  @apply rotate-12 scale-125
+  img {
+    @apply rotate-12 scale-125
+  }
 }
 
 #mainLinks a:nth-of-type(1) { background: linear-gradient(30deg, #07100A, #0E301C);}
-#mainLinks a:nth-of-type(2) { background: linear-gradient(30deg, #ce2929, #c48249);}
+#mainLinks a:nth-of-type(2) { background: linear-gradient(30deg, #d66565, #d8bca4);}
 #mainLinks a:nth-of-type(3) { background: linear-gradient(30deg, #36D166, #138645);}
 #mainLinks a:nth-of-type(4) { background: linear-gradient(30deg, #e38a5e, #22428e);}
 #mainLinks a:nth-of-type(5) { background: linear-gradient(30deg, #15622E, #081939);}
 #mainLinks a:nth-of-type(6) { background: linear-gradient(30deg, #ecc695, #992281);}
 #mainLinks a:nth-of-type(7) { background: linear-gradient(30deg, #B35D11, #400a20);}
 #mainLinks a:nth-of-type(8) { background: linear-gradient(30deg, #463c38, #9f1e1e);}
+
+#extrasLinks a:nth-of-type(1) { background: linear-gradient(30deg, #e87272, #622bc9);}
+#extrasLinks a:nth-of-type(2) { background: linear-gradient(30deg, #55e18d, #4c0f3d);}
+#extrasLinks a:nth-of-type(3) { background: linear-gradient(30deg, #da93dd, #b484e1);}
+#extrasLinks a:nth-of-type(4) { background: linear-gradient(30deg, #251166, #d48730);}
+#extrasLinks a:nth-of-type(5) { background: linear-gradient(30deg, #f0843d, #d290cc);}
+#extrasLinks a:nth-of-type(6) { background: linear-gradient(30deg, #14711c, #511c1c);}
 
 #vice[data-hidden="1"] > #moreSocials {
   opacity: 0;
