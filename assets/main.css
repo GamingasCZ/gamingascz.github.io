@@ -1,3 +1,8 @@
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
 * {
   font-family: 'Gloria Hallelujah', cursive;
   color: black;
@@ -9,25 +14,13 @@
 
 @media (prefers-reduced-motion) {
   * { transition: none !important; color: var(--text-dark);}
-  .socialText:hover > img {transform: scale(1) !important; }
+  .hoverScale:hover > img {@apply !transform-none; }
   body {background: var(--default-col2) !important;}
 }
 
-
-.socialImg {
-    width: 5rem;
-    height: max-content;
-    transform: none;
+@theme {
+  --color-dark: var(--text-dark);
 }
-#smaller > img {
-  width: 2.5rem;
-}
-#smaller > h2 {
-  font-size: 1.5rem;
-  padding-left: 10px;
-}
-
-#smaller {margin: 0 -0.25rem;}
 
 :root {
   --default-col: #a1ff86;
@@ -49,28 +42,51 @@
   --SH-col: #568fb1;
   --TW-col: #18cce3;
   --KO-col: #e38418;
+  --SB-col: #a9c3d5;
 }
 
 body {
-  position: relative;
+  @apply relative min-h-screen flex flex-col items-center m-0 overflow-x-hidden mb-16 max-w-4xl mx-auto;
   background-color: #a1ff86;
   background-color: var(--default-col);
-  min-height: 100vh;
-  margin: 0;
-  overflow-x: hidden;
-  margin-bottom: 4rem;
 }
 #bg {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  left: 0;
-  top: 0;
+  @apply fixed w-screen h-screen left-0 top-0 -z-10;
   background-image: linear-gradient(rgba(175, 245, 185, 0) 0%, var(--dark-col) 100%);
-  z-index: -10;
 }
 
-h1,h2, h3 {
+a {
+  @apply no-underline
+}
+
+.hoverScale {
+ @apply transform-none transition-transform
+}
+.hoverScale:hover {
+  @apply rotate-12 scale-125
+}
+
+#mainLinks a:nth-of-type(1) { background: linear-gradient(30deg, #07100A, #0E301C);}
+#mainLinks a:nth-of-type(2) { background: linear-gradient(30deg, #ce2929, #c48249);}
+#mainLinks a:nth-of-type(3) { background: linear-gradient(30deg, #36D166, #138645);}
+#mainLinks a:nth-of-type(4) { background: linear-gradient(30deg, #e38a5e, #22428e);}
+#mainLinks a:nth-of-type(5) { background: linear-gradient(30deg, #15622E, #081939);}
+#mainLinks a:nth-of-type(6) { background: linear-gradient(30deg, #ecc695, #992281);}
+#mainLinks a:nth-of-type(7) { background: linear-gradient(30deg, #B35D11, #400a20);}
+#mainLinks a:nth-of-type(8) { background: linear-gradient(30deg, #463c38, #9f1e1e);}
+
+#vice[data-hidden="1"] > #moreSocials {
+  opacity: 0;
+  visibility: hidden;
+}
+#vice[data-hidden="0"] #more {
+  display: none;
+}
+#vice[data-hidden="1"] #less {
+  display: none;
+}
+
+/*h1,h2, h3 {
   font-size: 2.5rem;
   margin: 0;
 }
@@ -98,7 +114,7 @@ h3 {
 }
 
 .title {
-  font-size: min(8rem, 18vw);
+  font-size: min(7rem, 18vw);
   background-clip: content-box;
   text-align: center;
   font-weight: 900;
@@ -173,10 +189,14 @@ h3 {
 
 #mainLinks h3, span {color: inherit;}
 
-#mainLinks a:nth-of-type(1) { color: white; background: linear-gradient(30deg, #07100A, #0E301C);}
-#mainLinks a:nth-of-type(2) { background: linear-gradient(30deg, #ce2929, #c48249);}
-#mainLinks a:nth-of-type(3) { background: linear-gradient(30deg, #36D166, #138645);}
-#mainLinks a:nth-of-type(4) { background: linear-gradient(30deg, #e38a5e, #22428e);}
+
+
+
+
+
+
+
+
 
 .mainTable {
   display: flex;
@@ -210,16 +230,7 @@ h3 {
   opacity: 1;
 }
 
-#vice[data-hidden="1"] > #moreSocials {
-  opacity: 0;
-  visibility: hidden;
-}
-#vice[data-hidden="0"] #more {
-  display: none;
-}
-#vice[data-hidden="1"] #less {
-  display: none;
-}
+
 
 .footerButton {
   background: none;
@@ -298,3 +309,32 @@ article {
   max-width: 95vw;
   overflow-x: scroll;
 }
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--text-default);
+  gap: 1rem;
+}
+
+.sectionTitle img {
+  width: 3rem;
+}
+
+.sectionTitle hr {
+  flex-grow: 1;
+  background: var(--text-default);
+  border: none;
+  height: 0.25rem;
+  border-radius: 1rem;
+}
+
+#kofi {
+  position: absolute;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#kofi * {font-size: 1rem !important;}*/
