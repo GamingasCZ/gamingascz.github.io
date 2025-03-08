@@ -53,7 +53,7 @@
 }
 
 body {
-  @apply relative min-h-screen flex flex-col items-center m-0 overflow-x-hidden mb-16 max-w-4xl mx-auto;
+  @apply relative min-h-screen p-2 flex flex-col items-center m-0 overflow-x-hidden mb-16 max-w-4xl mx-auto;
   background-color: #a1ff86;
   background-color: var(--default-col);
 }

@@ -30,11 +30,11 @@
 
     <img src="images/gglogo3.svg" alt="" class="fixed pointer-events-none bottom-2 left-2 opacity-20 mix-blend-overlay">
 
-    <dialog id="contactDialog" class="backdrop:bg-black/80 backdrop:backdrop-grayscale-100 p-2 w-[30rem] relative rounded-md">
+    <dialog id="contactDialog" class="backdrop:bg-black/80 backdrop:backdrop-grayscale-100 p-2 w-[40rem] relative rounded-md">
         <button onclick="closeDialog()" class="w-max cursor-pointer ml-auto absolute top-2 right-2 bg-transparent border-none text-4xl mb-2">X</button>
         <img src="images/devPFP.jpg" id="pfp" class="rounded-lg" alt="PFP" width="128">
         <div class="flex flex-col">
-            <h2 class="m-0 leading-8" id="name">GamingasCZ - %syr he/him</h2>
+            <h2 class="m-0 leading-10" id="name">GamingasCZ - %syr he/him</h2>
             <span class="ml-4">Vojtěch Bartoň</span>
         </div>
         <div class="flex flex-col mt-8">
@@ -48,23 +48,24 @@
         </div>
         <h2 class="mt-4 mb-0 leading-8">First time talking to me?</h2>
         <ul class="m-0">
-            <li>Message me only if you need something from me</li>
-            <li>Get to the point asap - even if your request is silly :D</li>
-            <li>Don't message me too frequently</li>
-            <li>Don't ask me to join VCs</li>
+            <li>I'm usually very friendly and do my absolute best to help out!</li>
+            <li>Avoid small talk; message me preferrably if it's work related.</li>
+            <li>Fret not, if your request is silly; get to the point fast!</li>
+            <li>Please don't message me too frequently.</li>
+            <li>Don't ask me to join VCs.</li>
         </ul>
     </dialog>
 
     <div class="flexCol">
-        <h1 class="title text-8xl font-bold">Gamingas</h1>
+        <h1 class="title text-[size:min(6rem,_18vw)] font-bold">Gamingas</h1>
     </div>
 
-    <a target="_blank" href="https://ko-fi.com/gamingas" class="absolute flex flex-col hoverScale items-center top-14 -left-8 bgmod" id="kofi" data-col="KO">
+    <a target="_blank" href="https://ko-fi.com/gamingas" class="md:absolute flex flex-col hoverScale items-center top-14 -left-8 bgmod" id="kofi" data-col="KO">
         <img class="mx-auto w-20" src="images/kofi.webp" alt="Kofi" width="40">
         <h3 class="m-0 text-sm">Support me on Ko-fi!</h3>
     </a>
 
-    <main class="grid grid-cols-3 justify-items-center mt-4 gap-4 text-2xl">
+    <main class="grid md:grid-cols-3 justify-items-center mt-4 gap-4 text-2xl">
         <a target="_blank" href="https://www.youtube.com/channel/UChraQeO5cjYneoD221BRHpw" class="flex hoverScale items-center gap-2 bgmod" data-col="YT">
             <img width="80" height="80" class="w-16 h-16" alt="YT" src="images/yt.webp">
             <h2 class="socialHead">YouTube</h2>
@@ -97,7 +98,7 @@
             <h2 id="less">Less</h2>
             <img alt="More" class="w-12 h-12" width="64" height="64" src="images/arroe.webp">
         </div>
-        <dív id="moreSocials" class="flex gap-4 text-xl">
+        <dív id="moreSocials" class="flex flex-wrap gap-4 text-xl">
             <a target="_blank" href="https://odysee.com/@GamingasCZ:4" class="moreText">Odysee</a>
             <a target="_blank" href="https://www.reddit.com/user/jsemzbrna" class="moreText">Reddit</a>
             <a target="_blank" href="https://gamingascz.newgrounds.com/" class="moreText">Newgrounds</a>
@@ -112,7 +113,7 @@
             <span class="text-3xl">Websites</span>
             <hr class="grow border-none bg-dark rounded-md h-1">
         </div>
-        <div id="mainLinks" class="grid grid-cols-2 gap-2">
+        <div id="mainLinks" class="grid md:grid-cols-2 gap-2">
             <a target="_blank" href="https://gamingas.cz/gdlists" class="border-2 border-white outline-2 outline-black items-center flex gap-2 rounded-md !text-white p-2 bgmod" data-col="dark GDL">
                 <img src="images/gdlists.webp" width="80" class="w-10 h-max" alt="GDL">
                 <div>
@@ -150,7 +151,7 @@
             <span class="text-3xl">Extras</span>
             <hr class="grow border-none bg-dark rounded-md h-1">
         </div>
-        <div id="extrasLinks" class="grid grid-cols-2 gap-2">
+        <div id="extrasLinks" class="grid md:grid-cols-2 gap-2">
             <a target="_blank" href="https://gamingas.cz/gdlists/review/0c402d666c" class="border-2 border-white outline-2 outline-black items-center flex gap-2 rounded-md !text-white p-2 bgmod" data-col="FRB">
                 <img src="images/france.webp" width="80" class="w-10 h-max" alt="FRB">
                 <div>
