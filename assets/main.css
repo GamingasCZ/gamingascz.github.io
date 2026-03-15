@@ -82,12 +82,12 @@ a {
 #mainLinks a:nth-of-type(3) { background: linear-gradient(30deg, #36D166, #138645);}
 #mainLinks a:nth-of-type(4) { background: linear-gradient(30deg, #e38a5e, #22428e);}
 
-#blogLinks li:nth-of-type(1) { background: linear-gradient(30deg, #52df39, #2f043d);}
-#blogLinks li:nth-of-type(2) { background: linear-gradient(30deg, #dfa238, #143c99);}
-#blogLinks li:nth-of-type(3) { background: linear-gradient(30deg, #ac82df, #509991);}
-#blogLinks li:nth-of-type(4) { background: linear-gradient(30deg, #62b5df, #143c99);}
-#blogLinks li:nth-of-type(5) { background: linear-gradient(30deg, #d66565, #7e731f);}
-#blogLinks li:nth-of-type(6) { background: linear-gradient(30deg, #56d1c3, #6b2ebf);}
+#blogLinks li:nth-of-type(1) { background: linear-gradient(30deg, #9ac0d1, #4f869a);}
+#blogLinks li:nth-of-type(2) { background: linear-gradient(30deg, #52df39, #2f043d);}
+#blogLinks li:nth-of-type(3) { background: linear-gradient(30deg, #dfa238, #143c99);}
+#blogLinks li:nth-of-type(4) { background: linear-gradient(30deg, #ac82df, #509991);}
+#blogLinks li:nth-of-type(5) { background: linear-gradient(30deg, #62b5df, #143c99);}
+#blogLinks li:nth-of-type(6) { background: linear-gradient(30deg, #d66565, #7e731f);}
 /* #mainLinks a:nth-of-type(5) { background: linear-gradient(30deg, #15622E, #081939);} */
 /* #mainLinks a:nth-of-type(6) { background: linear-gradient(30deg, #ecc695, #992281);} */
 /* #mainLinks a:nth-of-type(7) { background: linear-gradient(30deg, #B35D11, #400a20);} */
