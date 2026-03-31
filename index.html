@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link rel="canonical" href="https://gamingas.cz" />
+    <link rel="canonical" href="https://gamingas.cz">
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@g4mingaz" />
-    <meta name="twitter:title" content="GamingasCZ, a human being!" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@g4mingaz">
+    <meta name="twitter:title" content="GamingasCZ, a human being!">
     <meta name="twitter:description"
-        content="Hello! I'm Gamingas, a webdev, game dev, digital artist and a small YouTuber. Here's all my work!" />
-    <meta name="twitter:image" content="images/devPFP.jpg" />
+        content="Hello! I'm Gamingas, a webdev, game dev, digital artist and a small YouTuber. Here's all my work!">
+    <meta name="twitter:image" content="images/devPFP.jpg">
 
-    <meta name="description" content="Hello! I'm Gamingas, a webdev, game dev, digital artist and a small YouTuber. Here's all my work!"/>
+    <meta name="description" content="Hello! I'm Gamingas, a webdev, game dev, digital artist and a small YouTuber. Here's all my work!">
     
     <title>GamingasCZ</title>
 
@@ -27,13 +27,15 @@
 
 </head>
 
-<body class="relative max-w-80">
+<body>
     <dialog id="contactDialog" class="backdrop:bg-black/80 backdrop:backdrop-grayscale-100 p-2 w-[40rem] relative rounded-md">
         <button onclick="closeDialog()" class="w-max cursor-pointer ml-auto absolute top-2 right-2 bg-transparent border-none text-4xl mb-2">X</button>
         <div class="flex justify-center items-center flex-col">
             <img src="images/devPFP.jpg" id="pfp" class="rounded-lg" alt="PFP" width="128">
-            <h2 class="m-0 leading-10">GamingasCZ (Vojtěch Bartoň)</h2>
-            <span class="ml-4"></span>
+            <h2 class="m-0 leading-10">GamingasCZ - Vojtěch Bartoň</h2>
+            <p class="m-0"><img src="images/csWarn.webp" width="16" alt="CZ">
+                <span id="name">Czech / %s years old</span>
+            </p>
         </div>
         <hr class="my-4">
         <div class="flex justify-evenly my-4 items-start flex-wrap">
@@ -50,76 +52,85 @@
         <h2 class="mt-4 mb-0 leading-8">First time talking to me?</h2>
         <ul class="m-0">
             <li>I'm usually very friendly and do my best to help out with anything!</li>
-            <li>Message me preferrably if it's work related.</li>
-            <ul>
-                <li>No need to beat around the bush, get to the point fast!</li>
-                <li>If you'd like to talk, slowly ease your way into a conversation.</li>
-            </ul>
+            <li>Message me preferrably if it's work related.
+                <ul>
+                    <li>If you'd like to talk, slowly ease your way into a conversation.</li>
+                </ul>
+            </li>
             <li>Please don't message me too frequently.</li>
             <li>Don't ask me to join VCs.</li>
         </ul>
     </dialog>
 
-    <div class="relative mt-16 w-full text-center">
-        <img src="images/gglogo3.svg" alt="" width="256" class="absolute left-1/2 -translate-x-1/2 -top-8" id="logoClip">
-        <h1 class="title mb-4 text-[size:min(6rem,_18vw)] font-bold">Gamingas</h1>
-    <div>
-    <h2 class="m-0 max-sm:text-base leading-10" id="name">%syr Czech SW Dev / Artist / YouTuber</h2>
-
-    <section class="flex flex-col items-center justify-center">
-        <ul class="flex list-none max-sm:grid-cols-6 sm:grid-cols-3 px-0 justify-items-center mt-4 gap-4 text-2xl">
-            <li><a target="_blank" href="https://www.youtube.com/channel/UChraQeO5cjYneoD221BRHpw" class="flex1 items-center hoverScale gap-2" data-col="YT">
-                <img title="YouTube" width="40" height="40" class="w-12 h-12" alt="YT" src="images/yt.webp">
-            </a></li>
-            <li><a target="_blank" href="https://bsky.app/profile/gamingas.cz" class="flex items-center hoverScale gap-2" data-col="BSKY">
-                <img title="Bluesky" width="40" height="40" class="w-12 h-12" alt="BSKY" src="images/bluesky.webp">
-            </a></li>
-            <li><a target="_blank" href="https://twitter.com/g4mingaz" class="flex items-center hoverScale gap-2" data-col="TW">
-                <img title="Twitter" width="40" height="40" class="w-12 h-12" alt="TW" src="images/tw.webp">
-            </a></li>
-            <li><a target="_blank" href="https://gamejolt.com/@GamingasCZ" class="flex items-center hoverScale gap-2" data-col="GJ">
-                <img title="GameJolt" width="40" height="40" class="w-12 h-12" alt="GJ" src="images/gj.webp">
-            </a></li>
-            <li><a target="_blank" href="https://sheezy.art/gamingascz" class="flex items-center hoverScale gap-2" data-col="SH">
-                <img title="Sheezy" width="40" height="40" class="w-12 h-12" alt="SH" src="images/sheezy.webp">
-            </a></li>
-            <li><a target="_blank" href="https://github.com/GamingasCZ" class="flex items-center hoverScale gap-2" data-col="GH">
-                <img title="GitHub" width="40" height="40" class="w-12 h-12" alt="GH" src="images/git.webp">
-            </a></li>
-            <li><a href="javascript:toggleSocials()" class="flex items-center hoverScale gap-2" data-col="GH">
-                <span class="font-black font-4xl">...</span>
-            </a></li>
-        </ul>
-
-        <div class="block mb-4" style="display: none" id="vice">
-            <div id="moresocials" class="flex gap-4 text-center">
-                <a target="_blank" href="https://odysee.com/@gamingascz:4">Odysee</a>
-                <a target="_blank" href="https://www.reddit.com/user/jsemzbrna">Reddit</a>
-                <a target="_blank" href="https://gamingascz.newgrounds.com/">Newgrounds</a>
-                <a target="_blank" href="https://www.twitch.tv/g4mingas">Twitch</a>
-                <a target="_blank" href="https://soundcloud.com/gamingascz">Soundcloud</a>
-            </div>
+    <div id="head" class="justify-items-center gap-5 mt-16">
+        <div id="headCenter" class="mx-4 text-center">
+            <img src="images/gglogo3.svg" alt="" width="256" class="absolute left-1/2 -translate-x-1/2 top-8" id="logoClip">
+            <h1 class="title mb-4 text-[size:min(6rem,_18vw)] font-bold">Gamingas</h1>
+            <h2 class="m-0 max-sm:text-base leading-10">Software Dev / Artist / Video Creator</h2>
         </div>
-    </section>
-<!--
-    <a href="https://gamejolt.com/games/TraiC/198010" class="lg:absolute top-0 -right-64">
-        <img src="images/traicAd.webp" alt="TraiC Banner">
-    </a> -->
+
+        <div id="headLeft" class="flex flex-col items-center justify-center">
+            <ul class="flex p-0 list-none gap-2 mediaLinks">
+                <li><a target="_blank" href="https://www.youtube.com/channel/UChraQeO5cjYneoD221BRHpw" class="hoverScale">
+                    <img title="YouTube" width="48" alt="YT" src="images/yt.webp">
+                </a></li>
+                <li style="--off: 0 2rem"><a target="_blank" href="https://bsky.app/profile/gamingas.cz" class="hoverScale">
+                    <img title="Bluesky" width="48" alt="BSKY" src="images/bluesky.webp">
+                </a></li>
+                <li style="--off: 0 4rem"><a target="_blank" href="https://twitter.com/g4mingaz" class="hoverScale">
+                    <img title="X/Twitter" width="48" alt="X/TW" src="images/x.webp">
+                </a></li>
+            </ul>
+        </div>
+
+        <div id="headRight" class="flex flex-col items-center justify-center">
+            <ul class="flex p-0 list-none gap-2 mediaLinks">
+                <li style="--off: 0 4rem"><a target="_blank" href="https://gamejolt.com/@GamingasCZ" class="hoverScale">
+                    <img title="GameJolt" width="48" alt="GJ" src="images/gj.webp">
+                </a></li>
+                <li style="--off: 0 2rem"><a target="_blank" href="https://sheezy.art/gamingascz" class="hoverScale">
+                    <img title="Sheezy" width="48" alt="SH" src="images/sheezy.webp">
+                </a></li>
+                <li><a target="_blank" href="https://github.com/GamingasCZ" class="hoverScale">
+                    <img title="GitHub" width="48" alt="GH" src="images/git.webp">
+                </a></li>
+            </ul>
+        </div>
+    </div>
 
 
-    <div>
-        <a target="_blank" href="https://ko-fi.com/gamingas" class="flex gap-2 justify-center items-center">
-            <img width="36" src="images/kofi.webp" alt="kofi">
-            <span>Support me on Ko-Fi!</span>
+    <div class="flex gap-8 mt-4 sm:text-xl">
+        <a href="javascript:toggleSocials()">
+            <img src="images/links.webp" width="24" alt="CZ">
+            Other links
+        </a>
+        <a href="javascript:openContact()">
+            <img src="images/contact.webp" width="24" alt="CZ">
+            Contact
+        </a>
+        <a target="_blank" href="https://ko-fi.com/gamingas">
+            <img src="images/kofi2.webp" width="24" alt="CZ">
+            Ko-Fi
         </a>
     </div>
 
-    <section class="w-full">
-        <div class="flex gap-2 items-center mb-4">
-            <img src="./images/websites.webp" class="w-14" alt="">
-            <h2 class="text-3xl">Websites</h2>
-            <hr class="grow border-none bg-dark rounded-md h-1">
+
+    <div class="block mt-4" style="display: none" id="vice">
+        <div id="moresocials" class="flex gap-4 text-center">
+            <a target="_blank" href="https://odysee.com/@gamingascz:4">Odysee</a>
+            <a target="_blank" href="https://www.reddit.com/user/jsemzbrna">Reddit</a>
+            <a target="_blank" href="https://gamingascz.newgrounds.com/">Newgrounds</a>
+            <a target="_blank" href="https://www.twitch.tv/g4mingas">Twitch</a>
+            <a target="_blank" href="https://soundcloud.com/gamingascz">Soundcloud</a>
         </div>
+    </div>
+
+    <section class="w-full">
+        <h2 class="text-3xl flex gap-2 items-center mb-4">
+            <img src="./images/websites.webp" class="w-14" alt="">
+            Websites
+            <span class="grow border-none bg-dark rounded-md h-1"></span>
+        </h2>
         <dl id="mainLinks" class="grid text-left list-none md:grid-cols-2 gap-2">
             <a target="_blank" href="https://gamingas.cz/gdlists" class="border-2 border-white outline-2 focus-within:outline-4 outline-black rounded-md !text-white p-2" data-col="dark GDL">
                 <dt>
@@ -138,13 +149,13 @@
             <a target="_blank" href="https://gamingas.cz/geocaching" class="border-2 border-white outline-2 focus-within:outline-4 outline-black rounded-md !text-white p-2" data-col="dark KES">
                 <dt>
                     <img src="images/chytejkesky.webp" width="40" class="w-10 align-middle" alt="KES">
-                    <span class="text-xl font-black">Chytej kesky!</span>
+                    <span class="text-xl font-black">Chytej kešky!</span>
                 </dt>
                 <dd class="text-sm pl-2">My school-leaving project about Geocaching!</dd>
             </a>
             <a target="_blank" href="https://gamingas.cz/traicBrowser" class="border-2 border-white outline-2 focus-within:outline-4 outline-black rounded-md !text-white p-2" data-col="dark TRB">
                 <dt>
-                    <img src="images/traic.webp" width="40" class="w-10 align-middle" alt="TRB">
+                    <img src="images/logoTraicBrowser.webp" width="40" class="w-10 align-middle" alt="TRB">
                     <span class="text-xl font-black">TraiC Browser</span>
                 </dt>
                 <dd class="text-sm pl-2">Share custom TraiC levels!</dd>
@@ -152,42 +163,91 @@
         </dl>
     </section>
 
-    <section class="w-full mt-12">
-        <div class="flex gap-2 items-center mb-4">
-            <img src="./images/brko.webp" class="w-14" alt="">
-            <h2 class="text-3xl">Blogs</h2>
-            <hr class="grow border-none bg-dark rounded-md h-1">
-            <a href="https://gamingas.cz/gdlists/review/8133db0c57" class="text-2xl ml-2" target="_blank">More...</a>
-        </div>
+    <section class="w-full mt-6">
+        <h2 class="text-3xl flex gap-2 items-center mb-4">
+            <img src="./images/games.webp" class="w-14" alt="">
+            Games
+            <span class="grow border-none bg-dark rounded-md h-1"></span>
+        </h2>
+        <dl id="gameLinks" class="grid text-left list-none md:grid-cols-2 gap-2">
+            <a target="_blank" href="https://gamejolt.com/games/TraiC/198010" class="border-2 border-white outline-2 focus-within:outline-4 outline-black rounded-md p-2" data-col="dark TRC">
+                <dt>
+                    <img src="images/traic.webp" width="40" class="w-10 align-middle" alt="TRC">
+                    <span class="text-xl text-black font-black">TraiC</span>
+                </dt>
+                <dd class="text-sm pl-2 text-black">Topdown adventure game with a level editor!</dd>
+            </a>
+            <a target="_blank" href="https://gamingas.cz/formkeeper" class="border-2 border-white outline-2 focus-within:outline-4 outline-black rounded-md p-2" data-col="dark FKZ">
+                <dt>
+                    <img src="images/fkeep.webp" width="40" class="w-10 align-middle" alt="FKZ">
+                    <span class="text-xl !text-white font-black">Formkeeperova Zkouška
+                        <img src="images/csWarn.webp" width="18" title="Czech Only!" alt="CZ">
+                    </span>
+                </dt>
+                <dd class="text-sm pl-2 !text-white">Platformer &amp; Puzzle ARG for my GD Level Requests!</dd>
+            </a>
+            <a target="_blank" href="https://gamejolt.com/games/sggb/430061" class="border-2 border-white outline-2 focus-within:outline-4 outline-black rounded-md p-2" data-col="dark SGB">
+                <dt>
+                    <img src="images/sggb.webp" width="40" class="w-10 align-middle" alt="SGB">
+                    <span class="text-xl !text-white font-black">SuperGamingasBros.
+                        <img src="images/wip.webp" height="24" title="Work in progress!" alt="WIP">
+                    </span>
+                </dt>
+                <dd class="text-sm pl-2 !text-white">Command-line RPG set in the Gamingas Dimension.</dd>
+            </a>
+            <a target="_blank" href="https://github.com/GamingasCZ/pkbattlesim_rmx" class="border-2 border-white outline-2 focus-within:outline-4 outline-black rounded-md p-2" data-col="dark PKS">
+                <dt>
+                    <img src="images/pkSim.webp" width="40" class="w-10 align-middle" alt="PKS">
+                    <span class="text-xl !text-white font-black">PKBattleSimRMX</span>
+                </dt>
+                <dd class="text-sm pl-2 !text-white">Android app for simulating Pokémon battles!</dd>
+            </a>
+        </dl>
+    </section>
+
+
+    <section class="w-full mt-6">
+            <h2 class="text-3xl flex gap-2 items-center mb-4">
+                <img src="./images/brko.webp" class="w-14" alt="">
+                Blogs
+                <span class="grow border-none bg-dark rounded-md h-1"></span>
+                <a href="https://gamingas.cz/gdlists/review/8133db0c57" class="text-2xl ml-2" target="_blank">More...</a>
+            </h2>
         <ul id="blogLinks" class="grid text-left list-none md:grid-cols-2 p-0 gap-2">
             <li class="border-2 border-black rounded-md p-2 text-xl font-black">
                 <a target="_blank" href="https://gamingas.cz/gdlists/review/1f993e0052" data-col="dark TRB">
                     Plány do 2026
+                    <img src="images/csWarn.webp" width="18" title="Czech" alt="CZ">
                 </a>
             </li>
             <li class="border-2 border-black rounded-md p-2 text-xl font-black">
                 <a target="_blank" href="https://gamingas.cz/gdlists/review/9cbd7ac9a6" data-col="dark TRB">
                     2025 Art Recap
+                    <img src="images/angWarn.webp" width="18" title="English" alt="EN">
                 </a>
             </li>
             <li class="border-2 border-black rounded-md p-2 text-xl font-black">
                 <a target="_blank" href="https://gamingas.cz/gdlists/review/p8e6350366" data-col="dark TRB">
                     Honzovo výbušné odpoledne
+                    <img src="images/csWarn.webp" width="18" title="Czech" alt="CZ">
                 </a>
             </li>
             <li class="border-2 border-black rounded-md p-2 text-xl font-black">
                 <a target="_blank" href="https://gamingas.cz/gdlists/review/53fbb883a0" data-col="dark TRB">
                     Writing a Complaint
+                    <img src="images/angWarn.webp" width="18" title="English" alt="EN">
                 </a>
             </li>
             <li class="border-2 border-black rounded-md p-2 text-xl font-black">
             <a target="_blank" href="https://gamingas.cz/gdlists/review/19" data-col="dark GDL">
                 5 let FiFqo Waterfallu
+                <img src="images/csWarn.webp" width="18" title="Czech" alt="CZ">
             </a>
             </li>
             <li class="border-2 border-black rounded-md p-2 text-xl font-black" >
             <a target="_blank" href="https://gamingas.cz/gdlists/review/1536f09559" data-col="dark ART">
                 2024 Art Recap
+                <img src="images/angWarn.webp" width="18" title="English" alt="EN">
             </a>
             </li>
         </ul>
@@ -195,35 +255,36 @@
 
 
     <section class="mt-12 w-full">
-        <div class="flex gap-2 items-center mb-4">
+        <h2 class="text-3xl flex gap-2 items-center mb-4">
             <img src="./images/extras.webp" class="w-14" alt="">
-            <h2 class="text-3xl">Extras</h2>
-            <hr class="grow border-none bg-dark rounded-md h-1">
-        </div>
-        <ul id="extrasLinks" class="list-none flex justify-evenly text-xl">
-            <li><a target="_blank" class="flex flex-col items-center" href="https://gamingas.cz/gdlists/review/0531dd3404">
-                <img src="images/dl.webp" width="56" class="w-14 h-14 object-contain" alt="DLS">
-                <span class="m-0 ">Downloads</span>
+            Extras
+            <span class="grow border-none bg-dark rounded-md h-1"></span>
+        </h2>
+        <ul id="extrasLinks" class="grid text-left list-none md:grid-cols-2 p-0 gap-2">
+            <li class="border-2 border-black p-1 rounded-md text-xl font-black">
+                <a target="_blank" class="flex items-center gap-2" href="https://gamingas.cz/gdlists/review/0531dd3404">
+                    <img src="images/dl.webp" width="40" alt="DLS">
+                    Downloads
             </a></li>
-            <li><a target="_blank" class="flex flex-col items-center" href="https://gamingas.cz/fistbump">
-                <img src="images/bump.webp" width="56" class="w-14 h-14 object-contain" alt="FBP">
-                <span class="m-0 ">Fistbump</span>
-                
+            <li class="border-2 border-black p-1 rounded-md text-xl font-black">
+                <a target="_blank" class="flex items-center gap-2" href="https://gamingas.cz/fistbump">
+                    <img src="images/bump.webp" width="40" alt="FBP">
+                    Fistbump
             </a></li>
-            <li><a target="_blank" class="flex flex-col items-center" href="https://gamingas.cz/tutorial/tutorial.html">
-                <img src="images/sggb.webp" width="56" class="w-14 h-14 object-contain" alt="SGB">
-                <span class="m-0 ">SGGB Tutorial</span>
-                
+            <li class="border-2 border-black p-1 rounded-md text-xl font-black">
+                <a target="_blank" class="flex items-center gap-2" href="https://gamingas.cz/tutorial/tutorial.html">
+                    <img src="images/sggb.webp" width="40" alt="SGB">
+                    SGGB Tutorial
             </a></li>
-            <li><a target="_blank" class="flex flex-col items-center" href="https://gamingas.cz/gdlists/review/4a57a886d9">
-                <img src="images/flag.webp" width="56" class="w-14 h-14 object-contain" alt="GDC">
-                <span class="m-0 ">GD 2.1 in Czech</span>
-                
+            <li class="border-2 border-black p-1 rounded-md text-xl font-black">
+                <a target="_blank" class="flex items-center gap-2" href="https://gamingas.cz/gdlists/review/4a57a886d9">
+                    <img src="images/flag.webp" width="40" alt="GDC">
+                    GD 2.1 in Czech
             </a></li>
-            <li><a target="_blank" class="flex flex-col items-center" href="https://gamingas.cz/theSolderingNation">
-                <img src="images/solderers.webp" width="56" class="w-14 h-14 object-contain" alt="TSN">
-                <span class="m-0 ">The Soldering Nation</span>
-
+            <li class="border-2 border-black p-1 rounded-md text-xl font-black">
+                <a target="_blank" class="flex items-center gap-2" href="https://gamingas.cz/theSolderingNation">
+                    <img src="images/solderers.webp" width="40" alt="TSN">
+                    The Soldering Nation
             </a></li>
         </ul>
     </section>
@@ -276,35 +337,6 @@
         </div>
     </section>
 
-   <section class="tableSection">
-        <div class="sectionTitle">
-            <img src="./images/games.webp" alt="">
-            <caption>Games</caption>
-            <hr>
-        </div>
-        <div id="mainLinks">
-            <a target="_blank" href="https://gamingas.cz/gdlists" class=" data-col="dark GDL">
-                <img src="images/gdlists.webp" width="80" alt="GDL">
-                <h3>Muggstride</h3>
-                <span>Geocaching themed tower defense game.</span>
-            </a>
-            <a target="_blank" href="https://gamingas.cz/art" class=" data-col="dark ART">
-                <img src="images/brush.webp" width="80" alt="ART">
-                <h3>TraiC</h3>
-                <span>Topdown adventure game with a level editor.</span>
-            </a>
-            <a target="_blank" href="https://gamingas.cz/geocaching" class=" data-col="dark KES">
-                <img src="images/chytejkesky.webp" width="80" alt="KES">
-                <h3>SuperGamingasBros.</h3>
-                <span>CLI RPG set in the Gamingas Dimension.</span>
-            </a>
-            <a target="_blank" href="https://gamingas.cz/traicBrowser" class=" data-col="dark TRB">
-                <img src="images/traic.webp" width="80" alt="TRB">
-                <h3>PKBattleSimRMX</h3>
-                <span>Android app for simulating Pokémon battles.</span>            
-            </a>
-        </div>
-    </section>
 
     <section class="tableSection">
         <div class="sectionTitle">
@@ -360,14 +392,6 @@
             </tr>
         </table>
     </section>-->
-
-    
-
-    <button class="bg-transparent border-none cursor-pointer text-xl" id="footerButton">
-        <h2>Contact</h2>
-    </button>
-</body>
-
 <script>
     const toggleSocials = () => {
         let el = document.querySelector("#vice")
@@ -390,19 +414,20 @@
     window.onload = function () {
         let age = new Date(new Date() - (new Date(2004, 8, 17, 5, 0, 0, 0)))
         document.querySelector("#name").textContent = document.querySelector("#name").textContent.replace("%s", age.getUTCFullYear() - 1970)
-
-        document.querySelector("#footerButton").addEventListener("click", () => {
-            document.querySelector("#contactDialog").showModal()
-            document.querySelector("#em1").textContent = atob(em1)
-            document.querySelector("#em2").textContent = atob(em2)
-            document.body.style.overflow = "clip"
-        })
     }
-    
+
+    function openContact() {
+        document.querySelector("#contactDialog").showModal()
+        document.querySelector("#em1").textContent = atob(em1)
+        document.querySelector("#em2").textContent = atob(em2)
+        document.body.style.overflow = "clip"
+    }
+
     function closeDialog() {
         document.querySelector("#contactDialog").close()
         document.body.style.overflow = ""
     }
 </script>
+</body>
 
 </html>
